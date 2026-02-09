@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  slack-bot:
+    build: .
+    container_name: slack-ai-assistant
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      # Mount data directory for persistence
+      - ./data:/app/data
+      # Mount credentials for Gmail/Calendar tokens
+      - ./credentials:/app/credentials
+      # Mount source code for development (optional - remove for production)
+      - ./src:/app/src
+    environment:
+      - PORT=8000
