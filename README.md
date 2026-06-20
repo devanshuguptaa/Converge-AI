@@ -675,11 +675,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - GitHub: [@devanshuguptaa](https://github.com/devanshuguptaa)
 
 ---
-
-<p align="center">
-  <strong>Built with ❤️ using Google Gemini, LangChain, and Slack Bolt</strong>
-</p>
-
 <p align="center">
   <a href="#-table-of-contents">⬆️ Back to Top</a>
 </p>
